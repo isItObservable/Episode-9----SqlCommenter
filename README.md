@@ -208,3 +208,7 @@ Test it out:
 
 
 ### V. Generate some traffic
+
+
+### V. View the traces in Dynatrace
+
