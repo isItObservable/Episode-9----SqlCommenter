@@ -1,0 +1,18 @@
+<http-action actionType="1"
+    eTag="W/&quot;29-ix1IcNGyuLl4DcvQv0BvOa+J5Ag&quot;"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="" path="/users" postCharset="" postType="4"
+    serverUid="host" slaProfileEnabled="false"
+    uid="42825fec-7b59-487d-a7ce-faa7e8ca97a3" useKeepAlive="false">
+    <header name="Content-Type" value="application/json"/>
+    <responseHeaders/>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+    <textPostContent><![CDATA[{
+        "email": "${firstrname.Firstname}.${name}@email.com",
+        "firstName": "${firstrname.Firstname}",
+        "lastName":"${name}"
+}]]></textPostContent>
+</http-action>

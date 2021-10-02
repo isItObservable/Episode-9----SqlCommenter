@@ -1,0 +1,16 @@
+<http-action actionType="1" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="" path="/posts" postCharset="" postType="4"
+    serverUid="host" slaProfileEnabled="false"
+    uid="ad87a873-bea4-49ee-b2b3-49d3e61fff8b" useKeepAlive="false">
+    <header name="Content-Type" value="application/json"/>
+    <responseHeaders/>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+    <textPostContent><![CDATA[{
+       "title": "${title}",
+        "body": "${body}"',
+        "author_id": ${uid}
+}]]></textPostContent>
+</http-action>

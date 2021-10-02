@@ -1,0 +1,35 @@
+<http-action actionType="1"
+    contentType="application/json; charset=utf-8"
+    eTag="W/&quot;107-OROpgI/Lo+tMoKxC+uX8xwbN2RQ&quot;"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="" path="/users" postCharset="" postType="1"
+    recordedResponseCode="200" recordedResponseTime="170"
+    responseSize="263" serverUid="host" slaProfileEnabled="false"
+    uid="f0eb55dc-1694-422f-85c0-440e2aded16f" useKeepAlive="false">
+    <responsePageFileDescription>team/vus/users/%resources%/recorded-responses/res_d78f3be5-60e4-4238-9c38-8df398e307aa.0.0</responsePageFileDescription>
+    <requestContentFileDescription>team/vus/users/%resources%/recorded-requests/req_cust_f0eb55dc-1694-422f-85c0-440e2aded16f.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=","
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="0" extractTypeAdv="0" extractTypeSimple="0"
+        jsonpath="$.data.uid" matchNumber="0" matchNumberAdv="1"
+        matchNumberSimple="0" name="uid"
+        refererUid="f0eb55dc-1694-422f-85c0-440e2aded16f"
+        regExp="&quot;uid&quot;:(\d*?)," regExpAdv=""
+        setDefaultValue="true" startsWithSimple="&quot;uid&quot;:"
+        template="$1$" templateAdv="$1$"
+        uid="9901abfb-a6c4-45a4-a479-8c3d7fbc132c" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="3"/>
+    </variable-extractor>
+    <responseHeaders>HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 263
+ETag: W/"107-OROpgI/Lo+tMoKxC+uX8xwbN2RQ"
+Date: Fri, 01 Oct 2021 15:28:49 GMT
+Connection: keep-alive</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

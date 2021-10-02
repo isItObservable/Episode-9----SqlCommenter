@@ -1,0 +1,1 @@
+<variable-random-string max-lenght="250" min-lenght="50" name="body" order="1" policy="5" random-seed="false" range="2" uid="d256a40e-7867-4430-a8a5-bf87defa2978" whenOutOfValues="CYCLE_VALUES"/>

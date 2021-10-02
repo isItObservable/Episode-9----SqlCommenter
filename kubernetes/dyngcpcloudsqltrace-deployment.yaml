@@ -1,0 +1,35 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: dyn-gpc-cloudsql-traceconverter
+spec:
+  schedule: "*/2 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: dyn-gpc-cloudsql-trace
+            component: dyn-gpc-cloudsql-trace
+        spec:
+          containers:
+            - name: dyn-gpc-cloudsql-trace
+              image: mvilliger/dynatrace-gcp-cloud-sql-trace-fetch:0.1
+              imagePullPolicy: Always
+              env:
+                - name: OPENTEL_COLLECTOR_HTTP
+                  value: "http://otlp-collector:9411/api/v2/spans"
+                - name: GOOGLE_CLOUD_PROJECT
+                  value: "PROJECT_ID_TO_REPLACE"
+                - name: GOOGLE_APPLICATION_CREDENTIALS
+                  value: /secrets/service_account.json
+              volumeMounts:
+                - name: sqlcommenter-secret
+                  mountPath: /secrets/
+                  readOnly: true
+          volumes:
+            - name: sqlcommenter-secret
+              secret:
+                secretName: sa-sqlcommenter
+          restartPolicy: OnFailure
+

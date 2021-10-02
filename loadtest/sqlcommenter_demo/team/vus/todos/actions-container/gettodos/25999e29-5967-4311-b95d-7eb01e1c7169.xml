@@ -1,0 +1,9 @@
+<http-action actionType="1" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="" path="/todos" postType="1" serverUid="host"
+    slaProfileEnabled="false" uid="25999e29-5967-4311-b95d-7eb01e1c7169" useKeepAlive="false">
+    <responseHeaders/>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

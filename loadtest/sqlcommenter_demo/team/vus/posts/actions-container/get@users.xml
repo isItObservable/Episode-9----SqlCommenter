@@ -1,0 +1,7 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="getUsers" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="765576af-33dc-4a04-bc1a-8d234706dcad" weightsEnabled="false">
+    <weighted-embedded-action uid="0f1b5291-ca80-411c-9217-4006f03551cb"/>
+    <weighted-embedded-action uid="5bcfb38a-931f-4591-82a5-31c92098685a"/>
+</basic-logical-action-container>

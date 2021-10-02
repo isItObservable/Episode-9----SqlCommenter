@@ -1,0 +1,13 @@
+# Project description file
+
+project.name=sqlcommenter_demo
+project.version=8.2
+project.original.version=8.2
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.version=7.9.0
+product.original.version=7.9.0
+project.id=778330ee-0cb4-4c03-91af-9c595696f669
+project.config.path=team
+project.config.storage=XML_MULTI
+team.server.enabled=false

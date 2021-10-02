@@ -1,14 +1,15 @@
 version: '3.7'
 
 services:
-
   web:
-    build: .
+    image: hrexed/nodejsk8s:sqlcommenter_0.1
     environment:
       - NODE_ENV=development
       - PORT=3000
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - OTLP_COLLECTOR_HOST=otel-collector
+      - OTLP_COLLECTOR_PORT=4317
     ports:
       - 3000:3000
     depends_on:
@@ -22,3 +23,19 @@ services:
       - POSTGRES_DB=todos
     expose:
       - 5432
+    command: ["postgres", "-c", "log_statement=all"]
+
+  otel-collector:
+    image: otel/opentelemetry-collector-dev:latest
+    environment:
+      - COLLECTOR_ZIPKIN_HOST_PORT=9411
+    ports:
+      - 55679:55679
+      - 4317:4317
+      - 6832:6832
+      - 14250:14250
+      - 14268:14268
+      - 9411:9411
+      - 8888:8888
+      - 55680:55680
+

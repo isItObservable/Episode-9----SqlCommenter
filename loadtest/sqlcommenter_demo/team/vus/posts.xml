@@ -1,0 +1,27 @@
+<virtual-user errorPolicy="DO_NOTHING"
+    failedAssertionPolicy="DO_NOTHING" slaProfileEnabled="false"
+    type="LEGACY" uid="posts">
+    <init-container element-number="1" execution-type="0" pacingEnd="0"
+        pacingMode="MODE_NO_PACING" pacingStart="0" pacingValue="0"
+        slaProfileEnabled="false" weightsEnabled="false">
+        <description>Elements executed once when the Virtual User starts.</description>
+    </init-container>
+    <actions-container clearUserIterationDataMode="AUTO"
+        element-number="1" execution-type="0" pacingEnd="0"
+        pacingMode="MODE_NO_PACING" pacingStart="0" pacingValue="0"
+        slaProfileEnabled="false" weightsEnabled="false">
+        <description>Elements repeated until the Virtual User stops.</description>
+        <weighted-embedded-action uid="765576af-33dc-4a04-bc1a-8d234706dcad"/>
+        <weighted-embedded-action uid="9016946c-2766-477a-8855-097734ea2e51"/>
+        <weighted-embedded-action uid="b206d797-63d0-43ea-96be-3c988bb2700d"/>
+        <weighted-embedded-action uid="298b8d52-0551-475e-acf9-1be526ff0739"/>
+    </actions-container>
+    <end-container element-number="1" execution-type="0" pacingEnd="0"
+        pacingMode="MODE_NO_PACING" pacingStart="0" pacingValue="0"
+        slaProfileEnabled="false" weightsEnabled="false">
+        <description>Elements executed before the Virtual User stops.</description>
+    </end-container>
+    <thinktime-policy thinkTimeMode="MODE_SIMPLE_THINK_TIME"
+        thinktimeFactorValue="100" thinktimePolicy="0"
+        thinktimeRangeValue="0" thinktimeValue="5000"/>
+</virtual-user>

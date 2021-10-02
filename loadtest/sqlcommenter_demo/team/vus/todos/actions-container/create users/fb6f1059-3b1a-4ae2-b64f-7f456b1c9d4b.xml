@@ -1,0 +1,15 @@
+<http-action actionType="1" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="" path="/todos" postCharset="" postType="4"
+    serverUid="host" slaProfileEnabled="false"
+    uid="fb6f1059-3b1a-4ae2-b64f-7f456b1c9d4b" useKeepAlive="false">
+    <header name="Content-Type" value="application/json"/>
+    <responseHeaders/>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+    <textPostContent><![CDATA[{
+        title: '${title}@email.com',
+        completed: false
+}]]></textPostContent>
+</http-action>

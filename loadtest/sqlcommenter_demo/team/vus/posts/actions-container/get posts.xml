@@ -1,0 +1,6 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="get posts" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="298b8d52-0551-475e-acf9-1be526ff0739" weightsEnabled="false">
+    <weighted-embedded-action uid="ad87a873-bea4-49ee-b2b3-49d3e61fff8b"/>
+</basic-logical-action-container>
