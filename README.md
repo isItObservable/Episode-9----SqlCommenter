@@ -38,6 +38,12 @@ gcloud containr clusters create isitobservable \
 --project=${PROJECT_ID} --zone=${ZONE} \
 --machine-type=e2-standard-2 --num-nodes=2
 ```
+## 3.Clone Github repo
+```
+git clone https://github.com/isItObservable/Episode-9----SqlCommenter.git
+cd Episode-9----SqlCommenter
+```
+
 ### II. Create the Cloud SQL database
 #### 1. Google SQL instance
 The current solution requires the usage of a PostgreSQl database hosted in Google SQL
@@ -208,6 +214,11 @@ Test it out:
 
 
 ### V. Generate some traffic
+
+This repository contains a load testing project to simulate traffic against our NodeJs demo application.
+We need traffic to be able to view the generated traces.
+```
+
 
 
 ### V. View the traces in Dynatrace

@@ -1,0 +1,9 @@
+hello\controller\PetCollectionController.class
+hello\controller\VulnerableController.class
+hello\JPAConfig.class
+hello\model\Pet.class
+hello\repository\PetRepository.class
+hello\controller\PetStoreDoesNotExists.class
+hello\Application.class
+hello\ApplicationConfig.class
+hello\controller\PetController.class
