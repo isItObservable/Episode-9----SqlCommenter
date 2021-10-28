@@ -216,10 +216,19 @@ Test it out:
 ### V. Generate some traffic
 
 This repository contains a load testing project to simulate traffic against our NodeJs demo application.
-We need traffic to be able to view the generated traces.
-```
+To be able to run the load test you will need to update the load testing project to send the traffic to your own application.
+You will need to update the following files from the neoload project: 
+- loadtest/sqlcommenter_demo/team/variables/host.xml is the file describing the constant variable containing the ip adress of the server 
+- loadtest/sqlcommenter_demo/team/variables/port.xml is the file desribing the variable containing the port of the application.
+
+Download The latest version of [NeoLoad](https://www.neotys.com/support/download-neoload) , [start a trial](https://www.neotys.com/trial) if required
+Launch NeoLoad and opent the project : loadtest/sqlcommenter_demo/sqlcommenter_demo.nlp
+Click on the Scenario Tab and click on run the predefined test.
 
 
 
 ### V. View the traces in Dynatrace
 
+To visualize the traces in Dynatrace, 
+* Click on the menu ( application & Microservices / Distributes traces)
+* Filter on "Ingested traces"
