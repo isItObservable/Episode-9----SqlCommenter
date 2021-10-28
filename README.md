@@ -96,7 +96,7 @@ gcloud iam service-accounts keys create ~/key.json \
 #### 5. Turn your Service Account key into K8s Secret
 ```
 kubectl create namespace sqlcommenter
-kubectl create secret generic sa-sqlcommenter --from-file=service_account.json=~/key.json -n sqlcommenter
+kubectl create secret generic sa-sqlcommenter --from-file=service_account.json=key.json -n sqlcommenter
 ```
 #### 6. Create the secret with your Database details
 postgres-credentials
