@@ -18,8 +18,8 @@ data:
         endpoint: 0.0.0.0:9411
     exporters:
       otlphttp:
-        endpoint: "https://TENANT_ID_TOREPLACE/api/v2/otlp"
-        headers: {"Authorization": "Api-Token API_TOKEN_TOREPLACE"}
+        endpoint: "https://TENANTURL_TOREPLACE,/api/v2/otlp"
+        headers: {"Authorization": "Api-Token DT_API_TOKEN_TO_REPLACE"}
       logging:
         loglevel: debug
         sampling_initial: 5

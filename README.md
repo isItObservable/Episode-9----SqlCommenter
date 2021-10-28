@@ -130,8 +130,8 @@ Make sure that the scope Ingest OpenTelemetry traces is enabled.
 
 We need to update the opentelemetry collector deployment file by referring to our dynatrace tenant
 ```
-EXPORT DT_API_TOKEN=<YOUR DT TOKEN>
-EXPORT DT_API_URL="{your-environment-id}.live.dynatrace.com"
+export DT_API_TOKEN=<YOUR DT TOKEN>
+export DT_API_URL="{your-environment-id}.live.dynatrace.com"
 sed -i "s,TENANTURL_TOREPLACE,$DT_API_URL," kubernetes/otel-collector-deployment.yaml
 sed -i "s,DT_API_TOKEN_TO_REPLACE,$DT_API_TOKEN," kubernetes/otel-collector-deployment.yaml
 ```
@@ -178,14 +178,14 @@ kubectl apply -f kubernetes/node-deployment_fromfile.yaml -n sqlcommenter
 ```
 #### Create the database Scheme
 ```sh
-$ kubectl get pods
-$ kubectl exec <POD_NAME> --stdin --tty -- createdb -U sample todos
+kubectl get pods
+kubectl exec <POD_NAME> --stdin --tty -- createdb -U sample todos
 ```
 #### Populate the database with few records
 ```sh
-$ kubectl get pods
-$ kubectl exec <POD_NAME> knex migrate:latest
-$ kubectl exec <POD_NAME> knex seed:run
+kubectl get pods
+kubectl exec <POD_NAME> knex migrate:latest
+kubectl exec <POD_NAME> knex seed:run
 ```
 
 #### Expose the application with a loadbalancer
@@ -202,7 +202,7 @@ kubectl apply -f kubernetes/otel-collector-deployment.yaml -n sqlcommenter
 ```
 #### Extract the public api adress of the demo app
 ```sh
-$ kubectl get service node
+kubectl get service node
 
 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
 node      LoadBalancer   10.39.244.136   35.232.249.48   3000:30743/TCP   2m
@@ -232,3 +232,4 @@ Click on the Scenario Tab and click on run the predefined test.
 To visualize the traces in Dynatrace, 
 * Click on the menu ( application & Microservices / Distributes traces)
 * Filter on "Ingested traces"
+<p align="center"><img src="/image/dt_trace.png" width="60%" alt="dt distributed traces" /></p>
